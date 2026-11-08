@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign up for Facebook | Facebook</title>
+  <link rel="stylesheet" href="register1.css" />
+</head>
+<body>
+  <center><h1 class="logo" >Facebook</h1></center>
+  <br>
+  <div class="container">
+    <div class="form-box">
+      <center>
+      <h1>Create a new account</h1>
+      <p>It's quick and easy.</p>
+      </center>
+      <hr />
+
+      <form>
+        <div class="name-fields">
+          <input type="text" placeholder="First name" required />
+          <input type="text" placeholder="Surname" required />
+        </div>
+        <input type="text" placeholder="Mobile number or email address" required />
+        <input type="password" placeholder="New password" required />
+
+        <label>Date of birth</label>
+        <div class="dob">
+          <select>
+            <option>Day</option>
+            <option>1</option><option>2</option><option>3</option>
+            <option>4</option><option>5</option><option>6</option>
+            <option>7</option><option>8</option><option>9</option>
+            <option>10</option><option>11</option><option>12</option>
+            <option>13</option><option>14</option><option>15</option>
+            <option>16</option><option>17</option><option>18</option>
+            <option>19</option><option>20</option><option>21</option>
+            <option>22</option><option>23</option><option>24</option>
+            <option>25</option><option>26</option><option>27</option>
+            <option>28</option><option>29</option><option>30</option>
+            <option>31</option>
+          </select>
+          <select>
+            <option>Month</option>
+            <option>Jan</option><option>Feb</option><option>Mar</option>
+            <option>Apr</option><option>May</option><option>Jun</option>
+            <option>Jul</option><option>Aug</option><option>Sep</option>
+            <option>Oct</option><option>Nov</option><option>Dec</option>
+          </select>
+          <select>
+            <option>Year</option>
+            <!-- Options 1900–2025 -->
+            <script>
+              for (let y = 2025; y >= 1900; y--) {
+                document.write(`<option value="${y}">${y}</option>`);
+              }
+            </script>
+          </select>
+        </div>
+
+        <label>Gender</label>
+        <div class="gender">
+          <label><input type="radio" name="gender" /> Female</label>
+          <label><input type="radio" name="gender" /> Male</label>
+          <label><input type="radio" name="gender" /> Custom</label>
+        </div>
+
+        <p class="small-text">
+          People who use our service may have uploaded your contact information to Facebook.
+          <a href="#">Learn more.</a>
+        </p>
+
+        <p class="small-text">
+          By clicking Sign Up, you agree to our <a href="#">Terms</a>,
+          <a href="#">Privacy Policy</a> and <a href="#">Cookies Policy</a>.
+        </p>
+
+        <button type="submit">Sign Up</button>
+        <p class="login-link"><a href="index.html">Already have an account?</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
